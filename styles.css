@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 400px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 2px solid black;
+    padding: 20px; 
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; 
+}
+
+#notes-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+#notes-el {
+    width: 80%; 
+    height: 100px;  
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    resize: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+
+#save-btn {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#save-btn:hover {
+    background-color: #45a049; 
+}
+
+
+#saved-items {
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 0;
+    height: 200px;  
+    overflow-y: scroll;
+    list-style-type: none;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#saved-items::-webkit-scrollbar {
+    width: 6px;
+}
+
+#saved-items::-webkit-scrollbar-thumb {
+    background-color: green;
+    border-radius: 10px;
+}
+
+
+li {
+    background-color: #ddf2d1;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid green;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+#clear-btn {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+    transition: background-color 0.3s ease;
+}
+
+#clear-btn:hover {
+    background-color: #d32f2f;
+}
